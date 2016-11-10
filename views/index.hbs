@@ -1,30 +1,58 @@
 <div class="container">
+
     <h1>{{title}}</h1>
     <p>Welcome to {{title}}</p>
     <form>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-        </div>
-
-
-        <div class="form-group">
-            <label for="from-date-input" class="col-xs-2 col-form-label">ToDate</label>
-            <input class="form-control" type="date" value="2011-08-19" id="from-date-input">
-
-        </div>
-
-        <div class="form-group">
-            <label for="to-date-input" class="col-xs-2 col-form-label">From Date</label>
-            <div class="col-xs-10">
-                <input class="form-control" type="date" value="2011-08-19" id="to-date-input">
+        <div class="row row-margin">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="col-md-2 text-right"><label for="formGroupExampleInput">From</label></div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" list="places" id="formGroupExampleInput" placeholder="Example input">
+                        <datalist id="places">
+                            <option label="Canada" value="canada">
+                            <option label="USA" value="usa">
+                            <option label="Cuba" value="cuba">
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="col-md-2 text-right"><label for="formGroupExampleInput">To</label></div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                </div>
             </div>
         </div>
 
 
+        <div class="row row-margin">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="col-md-2 text-right"><label for="formGroupExampleInput">From</label></div>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" value="2011-08-19" id="from-date-input">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <div class="col-md-2 text-right"><label for="formGroupExampleInput">To</label></div>
+                    <div class="col-md-10">
+                        <input class="form-control" type="date" value="2011-08-19" id="to-date-input">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="row row-margin">
+            <div class="col-md-2 col-md-offset-6 text-right">
+                <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+            </div>
+        </div>
     </form>
 </div>
 
