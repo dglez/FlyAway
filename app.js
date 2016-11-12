@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var helpers = require(__dirname + "/helpers/helpers.js");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -13,6 +14,18 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+// register all partials in the partials folder
+var hbs = require('hbs');
+var partialsDir = __dirname + "/views/partials";
+hbs.registerPartials(partialsDir);
+
+// middleware for the partials
+app.use(function (req, res, next) {
+    if(!res.locals.partials) res.locals.partials = {};
+    res.locals.partials.airportInfo = helpers.getAirports();
+    next();
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

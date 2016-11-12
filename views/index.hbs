@@ -9,11 +9,7 @@
                     <div class="col-md-2 text-right"><label for="formGroupExampleInput">From</label></div>
                     <div class="col-md-10">
                         <input type="text" class="form-control" list="places" id="formGroupExampleInput" placeholder="Example input">
-                        <datalist id="places">
-                            <option label="Canada" value="canada">
-                            <option label="USA" value="usa">
-                            <option label="Cuba" value="cuba">
-                        </datalist>
+                        {{> countries}}
                     </div>
                 </div>
             </div>
@@ -21,12 +17,12 @@
                 <div class="form-group">
                     <div class="col-md-2 text-right"><label for="formGroupExampleInput">To</label></div>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        <input type="text" class="form-control" list="places" id="formGroupExampleInput" placeholder="Example input">
+                        {{> countries}}
                     </div>
                 </div>
             </div>
         </div>
-
 
         <div class="row row-margin">
             <div class="col-md-4">

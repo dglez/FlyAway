@@ -1,7 +1,5 @@
-{{#> countries }}
-    <datalist id="places">
-        <option label="Canada" value="canada">
-        <option label="USA" value="usa">
-        <option label="Cuba" value="cuba">
-    </datalist>
-{{/countries}}
+<datalist id="places">
+    {{#each partials.airportInfo.locations }}
+        <option value="{{city}} ({{code}}) {{country}}" label="{{code}}">
+    {{/each}}
+</datalist>
