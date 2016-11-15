@@ -1,6 +1,8 @@
 
 
-
+/*---------------------------------------------------------------------------------------------------------------------+
+* Adds list of countries to choose from matching the first 3 characters inserted in the input text
+* */
 var input = $('#from-airport, #to-airport');
 
 input.each(function () {
