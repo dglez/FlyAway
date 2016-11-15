@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/views/layout.hbs" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c9ab178-2a3c-4f1a-aa7a-74a477cc93c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5c9ab178-2a3c-4f1a-aa7a-74a477cc93c7" name="Default" comment="" />
     <ignored path="FlyAway.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -417,12 +414,12 @@
       <workItem from="1478806077662" duration="4407000" />
       <workItem from="1478955334587" duration="8365000" />
       <workItem from="1479164068217" duration="7055000" />
-      <workItem from="1479242825323" duration="3594000" />
+      <workItem from="1479242825323" duration="4169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26561000" />
+    <option name="totallyTimeSpent" value="27136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
